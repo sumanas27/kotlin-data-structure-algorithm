@@ -30,4 +30,11 @@ fun main() {
     node3.next = node1 // cycle back to x
     val llcdResult = linkedListCycleDetection.hasCycle(node1)
     println("Has cycle $llcdResult")
+
+    // Calling Contains Duplicate
+    val `containsDuplicate.kt` = `ContainsDuplicate.kt`()
+    val containsDuplicateResult = `containsDuplicate.kt`
+        .containsDuplicate(intArrayOf(1,2,3,1,0,1))
+    println("Contains Duplicate Integers $containsDuplicateResult")
+
 }
