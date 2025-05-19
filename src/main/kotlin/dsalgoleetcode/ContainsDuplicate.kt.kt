@@ -12,7 +12,7 @@ package main.kotlin.dsalgoleetcode
  * The element 1 occurs at the indices 0 and 3.
  * */
 
-class `ContainsDuplicate.kt` {
+class ContainsDuplicate {
 
     fun containsDuplicate(nums: IntArray): Boolean {
 

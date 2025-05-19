@@ -1,5 +1,7 @@
 package main.kotlin
 
+import main.kotlin.dsalgoleetcode.BuyAndSellStock
+import main.kotlin.dsalgoleetcode.ContainsDuplicate
 import main.kotlin.dsalgoleetcode.LinkedListCycleDetection
 import main.kotlin.dsalgoleetcode.ListNode
 import main.kotlin.dsalgoleetcode.LongestSubstring
@@ -32,9 +34,14 @@ fun main() {
     println("Has cycle $llcdResult")
 
     // Calling Contains Duplicate
-    val `containsDuplicate.kt` = `ContainsDuplicate.kt`()
-    val containsDuplicateResult = `containsDuplicate.kt`
+    val containsDuplicate = ContainsDuplicate()
+    val containsDuplicateResult = containsDuplicate
         .containsDuplicate(intArrayOf(1,2,3,1,0,1))
     println("Contains Duplicate Integers $containsDuplicateResult")
+
+    // Calling Buy and Sell Stock
+    val buyAndSellStock = BuyAndSellStock()
+    val bnsResult = buyAndSellStock.maxProfit(intArrayOf(1,4,8,0,2))
+    println("Max profit : $bnsResult")
 
 }
