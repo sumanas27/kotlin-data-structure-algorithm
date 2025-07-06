@@ -15,12 +15,7 @@ class FetchProductExcludingCurrent {
     fun fetchProduct(input: List<Int>): List<Int> {
 
         var currentProduct = 1
-
         val result = mutableListOf<Int>()
-
-        // for((element, index) in input.withIndex()){
-        //     var currentProduct = element * input[index + 1] *
-        // }
         for (i in 0..input.size - 1) {
             for (j in 0..input.size - 1) {
                 if (i == j) continue
